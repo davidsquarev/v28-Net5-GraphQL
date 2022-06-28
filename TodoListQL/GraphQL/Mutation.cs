@@ -30,6 +30,8 @@ namespace TodoListQL.GraphQL
             var item = new ItemData
             {
                 IsDone = input.isDone,
+                Start = input.start,
+                End = input.end,
                 Description = input.description,
                 ListId = input.listId,
                 Title = input.title

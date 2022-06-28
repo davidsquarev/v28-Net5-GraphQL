@@ -1,3 +1,5 @@
+using System;
+
 namespace TodoListQL.Models
 {
     public class ItemData
@@ -7,6 +9,8 @@ namespace TodoListQL.Models
         public string Description { get; set; }
         public bool IsDone { get; set; }
         public int ListId { get; set; }
+        public DateTime Start { get; set; }
+        public DateTime End { get; set; }
 
         public virtual ItemList ItemList {get;set;}
     }
